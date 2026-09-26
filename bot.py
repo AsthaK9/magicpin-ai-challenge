@@ -76,17 +76,17 @@ async def healthz():
     )
 
 
-@app.get("/v1/metadata", response_model=MetadataResponse)
+@app.get("/v1/metadata")
 async def metadata():
-    """Bot identity and technical metadata."""
-    return MetadataResponse(
-        team_name="Astha",
-        team_members=["Astha"],
-        model="deterministic-context-composer",
-        approach="4-context dynamic slot composition with intent-transition state router",
-        contact_email="asthakumari9922@gmail.com",
-        version="1.0.0",
-    )
+    return {
+        "team_name": "Astha",
+        "team_members": ["Astha Kumari"],
+        "model": "deterministic-context-composer",
+        "approach": "4-context dynamic slot composition with intent-transition state router",
+        "contact_email": "asthakumari9922@gmail.com",
+        "version": "1.0.0",
+        "submitted_at": "2026-09-26T00:00:00Z",
+    }
 
 
 @app.post("/v1/context")
