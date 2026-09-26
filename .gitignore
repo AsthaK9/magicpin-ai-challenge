@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test / cache
+.pytest_cache/
+*.cache
+
+# Archives & Temporary artifacts
+*.zip
+magicpin-ai-challenge.zip
+magicpin-ai-challenge-final.zip
+scratch_inspect.txt
+scripts/scan_secrets.py
+scan_secrets.py
+magicpin-ai-challenge/
+
+# Local logs and environment
+*.log
+.env
