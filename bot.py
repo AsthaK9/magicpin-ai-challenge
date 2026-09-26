@@ -80,13 +80,12 @@ async def healthz():
 async def metadata():
     """Bot identity and technical metadata."""
     return MetadataResponse(
-        team_name="Vera AI Team",
-        team_members=["Lead Engineer"],
+        team_name="Astha",
+        team_members=["Astha"],
         model="deterministic-context-composer",
         approach="4-context dynamic slot composition with intent-transition state router",
-        contact_email="team@example.com",
+        contact_email="asthakumari9922@gmail.com",
         version="1.0.0",
-        submitted_at="2026-04-26T08:00:00Z",
     )
 
 
